@@ -1,0 +1,30 @@
+@keyframes bord {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 101%;
+    }
+}
+
+@keyframes bords {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.map {
+    margin-top: 20px;
+}

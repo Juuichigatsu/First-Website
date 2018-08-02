@@ -1,0 +1,43 @@
+.schedule-container {
+    background-color: rgb(255, 255, 255);
+}
+
+.shedule-header {
+    font-size: 30px;
+    font-size: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shedule-info {
+    text-align: center;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+.legend {
+    text-align: center;
+    font-size: 20px;
+    .legend-color {
+        padding-left: 15px;
+    }
+}
+
+.fir {
+    border-right: 5px solid $font-color;
+    padding-right: 3px;
+}
+
+.sec {
+    border-right: 5px solid rgb(6, 136, 86);
+    padding-right: 3px;
+}
+
+.thr {
+    border-right: 5px solid rgb(247, 189, 127);
+    padding-right: 3px;
+}
+
+.copy_rights {
+    text-align: center;
+}

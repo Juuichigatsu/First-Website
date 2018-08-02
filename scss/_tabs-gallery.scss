@@ -1,0 +1,146 @@
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    clear: both;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    a {
+        width: 20%;
+        display: inline-block;
+        height: 3em;
+        margin: 2px;
+        background: $additional-color;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 3em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+}
+
+.tabs a.active {
+    background: #EC185D;
+    color: #fff;
+}
+
+
+/* Tabs contents */
+
+.tabs-container {}
+
+.tabs-container .tab-content {}
+
+.tabs-container.js .tab-content {
+    display: none;
+    padding: 1em;
+    font-size: 2em;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.tabs-container.js .tab-content.active {
+    display: block;
+}
+
+
+/*Gallerry*/
+
+//Minis
+.img-container {
+    max-width: 80%;
+    margin: auto;
+    border: #fff solid 3px;
+    background: #fff;
+}
+
+.main-img img,
+.imgs img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.flex-column {
+    max-width: 400px;
+}
+
+.img-fluid {
+    padding: 2%;
+}
+
+.panel {
+    background: initial;
+}
+
+//maxis
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    .holder {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        img {
+            width: 100%;
+            max-width: 600px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: block;
+        }
+        p {
+            color: #ffffff;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .nav {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 14px;
+            a {
+                color: white;
+                opacity: 0.3;
+                -webkit-user-select: none;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            #close {
+                right: 10px;
+                top: 0;
+                font-size: 30px;
+                opacity: 0.6;
+                z-index: 1000000;
+                position: absolute;
+                text-align: left;
+                box-sizing: border-box;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

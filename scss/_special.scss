@@ -1,0 +1,66 @@
+.offer-header {
+    font-size: 30px;
+    font-size: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*CLASSES*/
+
+.wrapper-class {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.classes-section {
+    background-color: rgb(255, 255, 255);
+}
+
+.classes-dec {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.class-type {
+    text-align: center;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+.class-title {
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.descriptions {
+    font-size: 16px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    box-shadow: 2px 4px $additional-color;
+    border: 1px solid $additional-color;
+    margin: 10px;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    transform: scale(1.05);
+}
