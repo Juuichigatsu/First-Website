@@ -59,10 +59,6 @@ main {
 
 /*MAIN PAGE*/
 
-header {
-    margin-bottom: 30px;
-}
-
 .toggle-menu {
     display: none;
 }
@@ -92,7 +88,7 @@ header {
     ul {
         position: absolute;
         z-index: 1010;
-        background-color: #fff;
+        background-color: rgb(255, 255, 255, 0.5);
         line-height: 2rem;
         left: -9999px;
         a {
@@ -150,6 +146,7 @@ ul.nav-list {
 
 .has-submenu {
     font-size: 18px;
+    background-color: transparent;
 }
 
 .ul-center {
@@ -270,28 +267,54 @@ ul.nav-list {
 }
 
 .fa-facebook {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     background: rgb(59, 89, 152);
     color: white;
     padding: 5px 0;
 }
 
 .fa-instagram {
-    background: rgb(18, 86, 136);
-    color: white;
+    text-align: center;
+    color: #fff;
+    line-height: 250px;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
 .fa-youtube {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     background: rgb(187, 0, 0);
     color: white;
+}
+
+.fitProfit {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
 
 /*SLIDER*/
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
+section .carousel-inner .item >img {
+    width: 100vw;
+}
+
+section .carousel-inner .carousel-caption {
+    font-family: 'Coiny', cursive;
+    padding-bottom: 1.5em;
+    h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+}
+
+.bounceInRight {
+    animation-delay: .7s;
+}
+
+.bounceInLeft {
+    animation-delay: 1.2s;
 }
 
 
