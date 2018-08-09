@@ -88,11 +88,10 @@ main {
     ul {
         position: absolute;
         z-index: 1010;
-        background-color: rgb(255, 255, 255, 0.5);
         line-height: 2rem;
         left: -9999px;
         a {
-            font-weight: normal;
+            font-weight: 600;
             display: block;
             padding: .5rem 1rem;
         }
@@ -166,12 +165,31 @@ ul.nav-list {
     display: none;
 }
 
-@media only screen and (max-width: 850px) {
-    html {
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1000px) {
     body {
-        width: 100%;
+        width: 100vw;
+    }
+    #carousel-example-generic > div > div.item.active > div > h2 {
+        padding-bottom: 30px;
+        font-size: 50px;
+    }
+    #carousel-example-generic > div > div.item.active > div > h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        width: 100vw;
+    }
+    #carousel-example-generic > div > div.item.active > div > h2 {
+        padding-bottom: 15px;
+        font-size: 26px;
+    }
+    #carousel-example-generic > div > div.item.active > div > h3 {
+        padding-bottom: 7.5px;
+        font-size: 20px;
     }
     .has-logo {
         display: none;
@@ -180,15 +198,82 @@ ul.nav-list {
         display: block;
         margin: 2rem auto;
         text-align: center;
+        overflow-wrap: break-word;
+    }
+    section .carousel-inner .item >img {
+        width: 100vw;
+    }
+    .nav-list {
+        display: block;
+        width: 100%;
+        position: static;
+        line-height: 1rem;
+        z-index: 1012;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .active {
+        max-height: 100%;
+        overflow: auto;
+    }
+    .nav-list ul {
+        position: static;
+        text-indent: 2rem;
+        z-index: 1013;
+    }
+    .toggle-menu {
+        display: block;
+        max-width: -webkit-min-content;
+        max-width: -moz-min-content;
+        max-width: min-content;
+        margin: 1rem auto;
+        background-color: #393939;
+        text-align: center;
+        color: #fff !important;
+        padding: 1rem;
+        border-radius: .25em;
+        &:hover {
+            background-color: $additional-color;
+        }
+    }
+    body > header > div > nav > div > div:nth-child(1) > ul > li {
+        margin: 1.5% 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .has-submenu {
+        font-size: 12px;
+    }
+    div:nth-child(1) > ul {
+        margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 650px) {
+    * {
+        font-size: 0.875rem;
+    }
+    .tabs {
+        font-size: 10px;
+    }
+    section .carousel-inner .item >img {
+        width: 100vw;
+    }
+    #carousel-example-generic > div > div.item.active > div > h2 {
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+    #carousel-example-generic > div > div.item.active > div > h3 {
+        padding-bottom: 2.5px;
+        font-size: 14px;
+    }
     .iconsH {
         margin: 2%;
-    }
-    * {
-        font-size: 14px;
     }
     .main-text {
         font-size: 12px;
@@ -302,10 +387,15 @@ section .carousel-inner .item >img {
 
 section .carousel-inner .carousel-caption {
     font-family: 'Coiny', cursive;
-    padding-bottom: 1.5em;
     h2 {
-        font-size: 50px;
+        padding-bottom: 1em;
+        font-size: 60px;
         text-transform: uppercase;
+        color: $additional-color;
+    }
+    h3 {
+        padding-bottom: 2.5em;
+        font-size: 35px;
     }
 }
 
@@ -315,6 +405,10 @@ section .carousel-inner .carousel-caption {
 
 .bounceInLeft {
     animation-delay: 1.2s;
+}
+
+body > section.container-fluid {
+    width: 100%;
 }
 
 
@@ -345,6 +439,10 @@ footer {
     }
 }
 
+
+/*CLASSES*/
+
+@import'classes';
 
 /*CONTACT FORM SUBPAGE*/
 

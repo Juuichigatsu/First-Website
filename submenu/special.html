@@ -34,10 +34,10 @@
                                 <a href="https://www.instagram.com/explore/locations/1264641573616073/lotus-dance-fitness-studio/" class="iconsH fa fa-instagram"></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCwQbtyjshnlwkFkxLQEo3Kw" class="iconsH fa fa-youtube"></a>
+                                <a href="https://www.youtube.com/channel/UC2QpXiXgFOp2JuluoidW6bg" class="iconsH fa fa-youtube"></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../images/FitProfit.jpg" alt="FitProfit Akceptowany"></a>
+                                <a href="#"><img class="fitProfit" src="../images/FitProfit.jpg" alt="FitProfit Akceptowany"></a>
                             </li>
                         </ul>
                     </div>
@@ -81,13 +81,13 @@
     </header>
     <!--SPECIAL OFFER-->
     <div class="container">
-        <section>
-            <h1 class="offer-header">OFERTA SPECJALNA</h1>
-            <div class="d-flex flex-row offer">
-                <div class="d-flex flex-column "> <img src="../OfertaSpecjalna/1.png" class="img-fluid"> <img src="../OfertaSpecjalna/2.png" class="img-fluid"></div>
-                <div class="d-flex flex-column"><img src="../OfertaSpecjalna/3.png" class="img-fluid"><img src="../OfertaSpecjalna/4.png" class="img-fluid"></div>
-            </div>
-        </section>
+        <!-- Flickity HTML init -->
+        <div class="carousel js-flickity">
+            <!-- images from unsplash.com -->
+            <div class="carousel-cell"> <img src="../OfertaSpecjalna/1.png" alt="pierwszy taniec" /> </div>
+            <div class="carousel-cell"> <img src="../OfertaSpecjalna/2.png" alt="trening personalny" /> </div>
+            <div class="carousel-cell"> <img src="../OfertaSpecjalna/4.png" alt="panieński" /> </div>
+        </div>
     </div>
     <footer>
         <div class="row baseline">
@@ -113,7 +113,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="../js/flickity.pkgd.min.js"></script>
+    <script src="../app.js"></script>
 </body>
 
 </html>
