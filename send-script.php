@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$mailToSend = 'j.d.hennigl@hotmail.com';
+$mailToSend = 'lotus@dapolska.pl';
 
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
